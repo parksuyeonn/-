@@ -7,67 +7,375 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/15f9e5c85b.js" crossorigin="anonymous"></script>
-        <style>
-            *{margin: 0; padding: 0;}
-            li {list-style: none;}
-            a {color: #000; text-decoration: none;}
+    <script src="https://kit.fontawesome.com/15f9e5c85b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-            body {font-family: 'pretendard';}
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
 
-            /* header 시작 */
-            header {
-                width: 100%;
-                padding: 0px 100px;
+        li {
+            list-style: none;
+        }
+
+        a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        body {
+            font-family: 'pretendard';
+        }
+
+        /* header 시작 */
+        header {
+            width: 100%;
+            padding: 0px 100px;
+        }
+
+        .lnb {
+            /* background-color: antiquewhite; */
+            display: flex;
+            justify-content: end;
+            padding: 20px 0px;
+        }
+
+        .hideLNB {
+            display: none;
+        }
+
+        .lnb li {
+            width: 100px;
+            cursor: pointer;
+        }
+
+        .nav-link {
+            font-weight: 600;
+            font-size: 20px;
+            color: #000;
+        }
+
+        .nav-item {
+            margin: 0px 30px;
+            padding-left: 20px;
+        }
+
+        .form-control {
+            width: 350px;
+            border-radius: 200px;
+            background-color: #e9e9e9;
+            font-size: 14px;
+        }
+
+        .d-flex {
+            position: relative;
+        }
+
+        .d-flex i {
+            color: #747474;
+            font-size: 14px;
+        }
+
+        .btn:hover {
+            background: none;
+        }
+
+        .btn-outline-success {
+            border: 0 !important;
+            position: absolute;
+            left: 50%;
+            right: -30%;
+        }
+
+        .navbar-toggler {
+            border: 0;
+        }
+
+        .form-control {
+            /* outline: 1px solid black; */
+        }
+        /* header 끝 */
+
+        /* banner 슬라이드 */
+        .swiper {
+            width: 100%;
+            height: 612px;
+            margin-top: 10px;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .swiper-slide:first-child {
+            background-image: url(img/banner_1st_pc_x.png);
+        }
+
+        .swiper-slide:nth-child(2) {
+            background-image: url(img/banner_2nd_pc_x.png);
+        }
+
+        .swiper-slide:last-child {
+            background-image: url(img/banner_3rd_pc_x.png);
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-slide .text{
+            color: #fff;
+        }
+
+        .swiper-slide .text h1 {
+            font-size: 42px;
+            text-align: left;
+            line-height: 40px;
+            position: absolute;
+            top: 10%;
+            left: 20%;
+        }
+
+        .swiper-slide .text span, .swiper-slide .text-2 span {
+            font-size: 20px;
+        }
+
+        .swiper-slide .text p {
+            font-size: 42px;
+            text-align: right;
+            line-height: 50px;
+            font-weight: 500;
+            position: absolute;
+            top: 70%;
+            left: 50%;
+        }
+
+        .swiper-slide .text-2 {
+            text-align: center;
+        }
+
+        .swiper-slide .text-2 h1,  .swiper-slide .text-3 h1 {
+            color: #fff;
+            font-size: 42px;
+        }
+
+        .more {
+            width: 192px;
+            height: 48px;
+            border: 1px solid #fff;
+            color: #fff;
+            line-height: 48px;
+            font-size: 18px;
+            position: absolute;
+            top: 65%;
+        }
+
+        .banner-logo {
+            width: 414px;
+            position: absolute;
+            top: 20%;
+            left: 20%;
+        }
+
+        .swiper-slide .text-3 {
+            position: absolute;
+            top: 40%;
+            left: 20%;
+            text-align: left;
+        }
+
+        .swiper-slide .text-3 p {
+            color: #fff;
+            font-size: 20px;
+            margin: 30px 0px;
+        }
+
+        
+        /* banner 슬라이드 끝 */
+
+        /* content 시작 */
+        .open-20th {
+            display: flex;
+            align-items: center;
+            padding: 192px 0px;
+            /* background-color: lightgoldenrodyellow; */
+            width: 1090px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .open-20th .text {margin-left: 60px;}
+
+        .open-20th .text h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+
+        .open-20th .text span {color: #CF3333;}
+
+        .open-20th .text p {
+            font-size: 24px;
+            font-weight: 500;
+            line-height: 38px;
+            margin-top: 50px;
+        }
+
+        .open-20th li:last-child {
+            border: 1px solid #000;
+            width: 192px;
+            height: 48px;
+            font-size: 18px;
+            text-align: center;
+            line-height: 48px;
+            position: absolute;
+            top: 72%;
+            left: 80%;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width:991px) {
+            .hideLNB {
+                display: block;
             }
 
             .lnb {
-                /* background-color: antiquewhite; */
-                display: flex;
-                justify-content: end;
-                padding: 20px 0px;
+                display: none;
+            }
+        }
+
+        @media screen and (max-width:480px) {
+
+            .swiper-slide .text h1 {
+                font-size: 31px;
+                text-align: left;
+                line-height: 31px;
+                position: absolute;
+                top: 10%;
+                left: 10%;
             }
 
-            .lnb li {
-                width: 100px;
-            }
-
-            .nav-link {
-                font-weight: 600;
+            .swiper-slide .text span, .swiper-slide .text-2 span {
                 font-size: 20px;
-                color: #000;
             }
 
-            .nav-item {
-                margin: 0px 30px;
+            .swiper-slide .text p { 
+                font-size: 24px;
+                line-height: 30px;
+                position: absolute;
+                left: 28%;
+                top: 78%;
+                text-align: right;
+            }
+
+            .swiper-slide .text-2 h1,  .swiper-slide .text-3 h1 {
+                color: #fff;
+                font-size: 31px;
+            }
+
+            .more {
+                width: 150px;
+                height: 33px;
+                line-height: 33px;
+                font-size: 16px;
+                top: 60%;
+            }
+
+            .banner-logo {
+                left: 10%;
+                width: 400px;
+            }
+
+            .swiper-slide .text-3 {
+                top: 38%;
+                left: 10%;
+            }
+
+            .swiper-slide .text-3 p {
+                font-size: 20px;
+                margin: 30px 0px;
+            }
+
+            header {
+                width: 100%;
+                padding: 0px;
+            }
+
+            .lnb {
+                display: none;
+            }
+
+            .navbar-nav {
+                text-align: center;
+            }
+
+            .hideLNB {
+                display: block;
+            }
+            .open-20th {
+                width: 100%;
+                flex-direction: column;
+            }
+
+            .open-20th .text {
+                padding: 30px 0px;
+                background-color: #000;
+                width: 100%;
+                height: 232px;
+                color: #fff;
                 padding-left: 20px;
             }
 
-            .form-control {
-                width: 350px;
-                border-radius: 200px;
-                background-color: #e9e9e9;
-                font-size: 14px;
+            .open-20th .text h1 {font-size: 20px;}
+
+            .open-20th .text p {
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 300;
+            align-items: center;
+            margin-top: 20px;
             }
 
-            .d-flex {position: relative;}
-
-            .d-flex i {
-                color: #747474;
-                font-size: 14px;
+            .open-20th li:last-child {
+            border: 1px solid #fff;
+            width: 134px;
+            height: 36px;
+            font-size: 18px;
+            text-align: center;
+            line-height: 36px;
+            position: absolute;
+            top: 77%;
+            left: 75%;
+            color: #fff;
             }
 
-            .btn:hover {
-                background: none;
+            .open-20th .text {margin-left: 0px;};
+
+            .open-20th-img {
+                width: 100%;
+            }
+            .open-20th-img img{
+                width: 100%;
             }
 
-            .btn-outline-success {
-                border: none;
+            .open-20th li:last-child {
                 position: absolute;
-                left: 50%;
-                right: -30%;
+                left: 68%;
+                top: 76%;
             }
-        </style>
+        }
+    </style>
 </head>
 
 <body>
@@ -77,10 +385,10 @@
             <li>마이페이지</li>
             <li>장바구니</li>
         </ul>
-        
+
         <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="../img/mylogo.png" alt="logo"></a>
+                <a class="navbar-brand" href="#"><img src="img/mylogo.png" alt="logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -100,19 +408,90 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">브랜드스토리</a>
                         </li>
+                        <li class="nav-item hideLNB">
+                            <a class="nav-link" href="#">마이페이지</a>
+                        </li>
+                        <li class="nav-item hideLNB">
+                            <a class="nav-link" href="#">장바구니</a>
+                        </li>
                     </ul>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="search" placeholder="검색어를 입력하세요." aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        <button class="btn btn-outline-success" type="submit"><i
+                                class="fa-solid fa-magnifying-glass"></i></button>
                     </form>
                 </div>
             </div>
         </nav>
     </header>
 
+    <!-- banner시작 -->
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="text">
+                    <h1>우아한 디자인, 탁월한 품질<br><span>플레이팅으로 완성하는 아름다운 식사</span></h1>
+                    <p>한 점의 예술을 담은<br>도자기 그릇을 지금 만나보세요.</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="text-2">
+                    <h1>최고의 순간을 위한 럭셔리 테이블웨어<br><span>고급 식탁은 고급 그릇에서 시작됩니다</span></h1>
+                </div>
+                <div class="more">더보기</div>
+            </div>
+            <div class="swiper-slide">
+                <div class="banner-logo">
+                    <img src="img/logo_last.png" alt="banner-logo">
+                </div>
+                <div class="text-3">
+                    <h1>크리스마스의 설렘을 식탁에 담다<br>즐거움이 가득한 연말파티,<br>특별한 그릇으로 완성</h1>
+                    <p>감성을 식탁에 더하세요</p>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-pagination"></div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
+    <!-- banner 끝 -->
+
+    <!-- content 시작 -->
+    <ul class="open-20th">
+        <li class="open-20th-img"><img src="img/20th.jpg" alt=""></li>
+        <li class="text">
+            <h1>오픈 <span>20주년</span> 특별 할인</h1>
+            <p>포르테연의 베스트셀러 제품만을 엄선해,<br>창립 20주년 특별 할인을 준비하였습니다.<br>베스트 아이템을 혜택가로 만나보세요</p>
+        </li>
+        <li>쇼핑하러 가기</li>
+    </ul>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            spaceBetween: 30,
+            centeredSlides: true,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
 </body>
 
 </html>

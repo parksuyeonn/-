@@ -1,0 +1,417 @@
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {color: #000; text-decoration: none;}
+
+body {
+    font-family: 'pretendard';
+}
+
+/* header 시작 */
+header {
+    width: 100%;
+    padding: 0px 100px;
+}
+
+.lnb {
+    /* background-color: aqua; */
+    display: flex;
+    justify-content: end;
+    padding: 20px 0px;
+    font-size: 16px;
+}
+
+.hideLNB {display: none;}
+
+.lnb li {
+    padding-left: 20px;
+    cursor: pointer;
+}
+
+.nav-link {
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+}
+
+.nav-item {
+    margin: 0px 30px;
+    padding-left: 20px;
+}
+
+.form-control {
+    border-radius: 200px;
+    background-color: #e9e9e9;
+    font-size: 14px;
+}
+
+.d-flex {
+    position: relative;
+    width: 350px;
+}
+
+.d-flex i {
+    color: #747474;
+    font-size: 14px;
+}
+
+.btn:hover {background: none !important;}
+
+.btn-outline-success {
+    border: 0 !important;
+    position: absolute;
+    left: 50%;
+    right: -30%;
+}
+
+.navbar-toggler {
+    border: 0;
+}
+/* header 끝 */
+
+/* banner 슬라이드 */
+.swiper {
+    width: 100%;
+    height: 612px;
+    margin-top: 10px;
+}
+
+.mainSwiper .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.mainSwiper .swiper-slide:first-child {
+    background: url(../img/banner_1st_pc_x.png) no-repeat;
+}
+
+.mainSwiper .swiper-slide:nth-child(2) {
+    background: url(../img/banner_2nd_pc_x.png) no-repeat;
+}
+
+.mainSwiper .swiper-slide:last-child {
+    background: url(../img/banner_3rd_pc_x.png) no-repeat;
+}
+
+.mainSwiper .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mainSwiper .swiper-slide .text {
+    color: #fff;
+}
+
+.mainSwiper .swiper-slide .text h1 {
+    font-size: 42px;
+    text-align: left;
+    line-height: 40px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+}
+
+.mainSwiper .swiper-slide .text span, .swiper-slide .text-2 span {
+    font-size: 20px;
+}
+
+.mainSwiper .swiper-slide .text p {
+    font-size: 42px;
+    text-align: right;
+    line-height: 50px;
+    font-weight: 500;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+}
+
+.mainSwiper .swiper-slide .text-2 {text-align: center;}
+
+.mainSwiper .swiper-slide .text-2 h1, .swiper-slide .text-3 h1 {
+    color: #fff;
+    font-size: 42px;
+}
+
+.more {
+    width: 192px;
+    height: 48px;
+    border: 1px solid #fff;
+    color: #fff;
+    line-height: 48px;
+    font-size: 18px;
+    position: absolute;
+    top: 65%;
+}
+
+.banner-logo {
+    width: 414px;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.swiper-slide .text-3 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    text-align: left;
+}
+
+.swiper-slide .text-3 p {
+    color: #fff;
+    font-size: 20px;
+    margin: 30px 0px;
+}
+/* banner 슬라이드 끝 */
+
+/* content 1 시작 */
+content {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.recommend {
+    margin-top: 110px;
+}
+
+.recommend h3 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.recommend p {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.swiper {
+    width: 1084px;
+    height: 548px;
+    margin-top: 55px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    height: 100%;
+}
+
+.slide-img {height: 449px;}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide ul {
+    text-align: left;
+    font-size: 16px;
+    padding-left: 18px;
+    margin-top: 8px;
+}
+
+.swiper-slide ul li:last-child {
+    color: #863333;
+    font-weight: 700;
+}
+/* content 1 끝 */
+
+/* contene 2 시작 */
+.open-20th {
+    display: flex;
+    align-items: center;
+    padding: 192px 0px;
+    /* background-color: lightgoldenrodyellow; */
+    width: 1090px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.open-20th .text {margin-left: 60px;}
+
+.open-20th .text h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.open-20th .text span {color: #CF3333;}
+
+.open-20th .text p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 38px;
+    margin-top: 50px;
+}
+
+.open-20th li:last-child {
+    border: 1px solid #000;
+    width: 192px;
+    height: 48px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 48px;
+    position: absolute;
+    top: 72%;
+    left: 80%;
+    cursor: pointer;
+}
+/* contene 2 끝 */
+
+@media screen and (max-width:991px) {
+    .hideLNB {display: block;}
+
+    .lnb {display: none;}
+}
+
+@media screen and (max-width:480px) {
+        header {
+            width: 100%;
+            padding: 0px;
+        }
+
+        .lnb {
+            display: none;
+        }
+
+        .navbar-nav {
+            text-align: center;
+        }
+
+        .hideLNB {
+            display: block;
+        }
+
+        .swiper-slide .text h1 {
+            font-size: 31px;
+            text-align: left;
+            line-height: 31px;
+            position: absolute;
+            top: 10%;
+            left: 10%;
+            /* color: #000; */
+        }
+    
+        .swiper-slide .text span, .swiper-slide .text-2 span {
+            font-size: 20px;
+        }
+    
+        .swiper-slide .text p { 
+            font-size: 24px;
+            line-height: 30px;
+            position: absolute;
+            left: 28%;
+            top: 78%;
+            text-align: right;
+        }
+    
+        .swiper-slide .text-2 h1,  .swiper-slide .text-3 h1 {
+            color: #fff;
+            font-size: 31px;
+        }
+    
+        .more {
+            width: 150px;
+            height: 33px;
+            line-height: 33px;
+            font-size: 16px;
+            top: 60%;
+        }
+
+        .swiper {
+        width: 100%;
+        height: 676px;
+        }
+
+        .swiper-slide {position: relative;}
+
+        .swiper-slide img {
+            height: 570px;
+        }
+
+        .swiper-slide ul {
+            font-size: 18px;
+            /* width: 100%;
+            height: 44px; */
+            position: absolute;
+            top: 85%;
+        }
+
+        .banner-logo {
+            left: 10%;
+            width: 400px;
+        }
+
+        .swiper-slide .text-3 {
+            top: 38%;
+            left: 10%;
+        }
+
+        .swiper-slide .text-3 p {
+            font-size: 20px;
+            margin: 30px 0px;
+        }
+
+        .recommend h3 {font-size: 26px;}
+
+        .recommend p {font-size: 20px;}
+
+        .open-20th {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        .open-20th .text {
+            padding: 30px 0px;
+            background-color: #000;
+            width: 100%;
+            height: 232px;
+            color: #fff;
+            padding-left: 20px;
+        }
+
+        .open-20th .text h1 {font-size: 20px;}
+
+        .open-20th .text p {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 300;
+        align-items: center;
+        margin-top: 20px;
+        }
+
+        .open-20th li:last-child {
+        border: 1px solid #fff;
+        width: 134px;
+        height: 36px;
+        font-size: 18px;
+        text-align: center;
+        line-height: 36px;
+        position: absolute;
+        top: 77%;
+        left: 75%;
+        color: #fff;
+        }
+
+        .open-20th .text {margin-left: 0px;};
+
+        .open-20th-img {
+            width: 100%;
+        }
+        .open-20th-img img{
+            width: 100%;
+        }
+
+        .open-20th li:last-child {
+            position: absolute;
+            left: 68%;
+            top: 76%;
+        }
+    }

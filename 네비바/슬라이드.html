@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <style>
+        li {list-style: none;}
+
+        html,
+        body {
+            position: relative;
+            height: 100%;
+        }
+
+        body {
+            background: #eee;
+            font-family: 'pretendard';
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 1084px;
+            height: 548px;
+        }
+
+        /* .swiper-wrapper div:first-child {
+            background: url(img/dozaki.jpg);
+            background-size: 100%;
+        }
+
+        .swiper-wrapper div:nth-child(2) {
+            background: url(img/dozaki2.jpg);
+            background-size: 100%;
+        }
+
+        .swiper-wrapper div:last-child {
+            background: url(img/dozaki3.jpg);
+            background-size: 100%;
+        } */
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            /* background: #fff; */
+            height: 100%;
+        }
+
+        .slide-img {
+            height: 449px;
+        }
+
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .swiper-slide ul {
+            text-align: left;
+            font-size: 16px;
+            padding-left: 20px;
+            margin-top: 8px;
+        }
+
+        .swiper-slide ul li:last-child {
+            color: #863333;
+            font-weight: 700;
+            margin-top: 6px;
+        }
+
+        @media screen and (max-width:480px) {
+            .swiper {
+            width: 100%;
+            height: 676px;
+            }
+
+            .swiper-slide {position: relative;}
+
+            .swiper-slide img {
+                height: 570px;
+            }
+
+            .swiper-slide ul {
+                font-size: 18px;
+                /* width: 100%;
+                height: 44px; */
+                position: absolute;
+                top: 85%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide-img">
+                    <img src="img/dozaki.jpg" alt="">
+                </div>
+               <ul>
+                <li>플라운드 스타터 세트 3인조 [온라인 공식몰 단독]</li>
+                <li>63,900원</li>
+               </ul>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="slide-img">
+                    <img src="img/dozaki2.jpg" alt="">
+                </div>
+                <ul>
+                    <li>베이직 타원볼 시리즈 [연간 기프트]</li>
+                    <li>72,810원</li>
+                </ul>
+            </div>
+
+            <div class="swiper-slide">
+                <div class="slide-img">
+                    <img src="img/dozaki3.jpg" alt="">
+                </div>
+                <ul>
+                    <li>네이처 플레이트 시리즈 그린 [20주년 특별]</li>
+                    <li>90,000원</li>
+                </ul>
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView:1.2 , //초기값은 모바일
+            spaceBetween: 27,
+            breakpoints: {
+                
+                1024: {
+                    slidesPerView:3 , //pc 해상도
+                    spaceBetween: 20,
+                }
+
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+</body>
+
+</html>
