@@ -105,7 +105,8 @@
     <!-- banner끝 -->
 
     <!-- content 1 시작 -->
-     <content>
+
+    <section class="recommend_wrap">
         <div class="recommend">
             <h3>감각적인 테이블웨어 세트 추천</h3>
             <p>트렌디한 접시세트를 만나보세요</p>
@@ -122,7 +123,7 @@
                         <li>63,900원</li>
                     </ul>
                 </div>
-
+    
                 <div class="swiper-slide">
                     <div class="slide-img">
                         <img src="img/dozaki2.jpg" alt="">
@@ -132,7 +133,7 @@
                         <li>72,810원</li>
                     </ul>
                 </div>
-
+    
                 <div class="swiper-slide">
                     <div class="slide-img">
                         <img src="img/dozaki3.jpg" alt="">
@@ -146,41 +147,43 @@
             <div class="swiper-pagination"></div>
         </div>
         <!-- content 1 끝 -->
+    </section>
+   
 
-        <!-- content 2 시작 -->
-        <ul class="open-20th">
-            <li class="open-20th-img"><img src="img/20th.jpg" alt=""></li>
-            <li class="text">
-                <h1>오픈 <span>20주년</span> 특별 할인</h1>
-                <p>포르테연의 베스트셀러 제품만을 엄선해,<br>창립 20주년 특별 할인을 준비하였습니다.<br>베스트 아이템을 혜택가로 만나보세요</p>
-            </li>
-            <li>쇼핑하러 가기</li>
-        </ul>
-        <!-- content 2 끝 -->
-        </content>
+    <!-- content 2 시작 -->
+    <ul class="open-20th">
+        <li class="open-20th-img"><img src="img/20th.jpg" alt=""></li>
+        <li class="text">
+            <h1>오픈 <span>20주년</span> 특별 할인</h1>
+            <p>포르테연의 베스트셀러 제품만을 엄선해,<br>창립 20주년 특별 할인을 준비하였습니다.<br>베스트 아이템을 혜택가로 만나보세요</p>
+        </li>
+        <li>쇼핑하러 가기</li>
+    </ul>
+    <!-- content 2 끝 -->
 
-        <!-- Swiper JS -->
-        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-        <!-- Initialize Swiper -->
-        <script>
-            var swiper = new Swiper(".mySwiper", {
-                slidesPerView: 1.2, //초기값은 모바일
-                spaceBetween: 27,
-                breakpoints: {
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-                    1024: {
-                        slidesPerView: 3, //pc 해상도
-                        spaceBetween: 20,
-                    }
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1.2, //초기값은 모바일
+            spaceBetween: 27,
+            breakpoints: {
 
-                },
-                pagination: {
-                    el: ".swiper-pagination",
-                    clickable: true,
-                },
-            });
-        </script>
+                1024: {
+                    slidesPerView: 3, //pc 해상도
+                    spaceBetween: 20,
+                }
+
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
 </body>
 
 </html>
