@@ -105,7 +105,6 @@
     <!-- banner끝 -->
 
     <!-- content 1 시작 -->
-
     <section class="recommend_wrap">
         <div class="recommend">
             <h3>감각적인 테이블웨어 세트 추천</h3>
@@ -116,7 +115,7 @@
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <div class="slide-img">
-                        <img src="img/dozaki.jpg" alt="">
+                        <img src="img/dozaki.jpg" alt="dozaki">
                     </div>
                     <ul>
                         <li>플라운드 스타터 세트 3인조 [온라인 공식몰 단독]</li>
@@ -126,7 +125,7 @@
     
                 <div class="swiper-slide">
                     <div class="slide-img">
-                        <img src="img/dozaki2.jpg" alt="">
+                        <img src="img/dozaki2.jpg" alt="dozaki2">
                     </div>
                     <ul>
                         <li>베이직 타원볼 시리즈 [연간 기프트]</li>
@@ -136,7 +135,7 @@
     
                 <div class="swiper-slide">
                     <div class="slide-img">
-                        <img src="img/dozaki3.jpg" alt="">
+                        <img src="img/dozaki3.jpg" alt="dozaki3">
                     </div>
                     <ul>
                         <li>네이처 플레이트 시리즈 그린 [20주년 특별]</li>
@@ -146,13 +145,14 @@
             </div>
             <div class="swiper-pagination"></div>
         </div>
+        <div class="recommend_wrap_more">더보기</div>
         <!-- content 1 끝 -->
     </section>
    
 
     <!-- content 2 시작 -->
     <ul class="open-20th">
-        <li class="open-20th-img"><img src="img/20th.jpg" alt=""></li>
+        <li class="open-20th-img"><img src="img/20th.jpg" alt="open"></li>
         <li class="text">
             <h1>오픈 <span>20주년</span> 특별 할인</h1>
             <p>포르테연의 베스트셀러 제품만을 엄선해,<br>창립 20주년 특별 할인을 준비하였습니다.<br>베스트 아이템을 혜택가로 만나보세요</p>
@@ -161,29 +161,28 @@
     </ul>
     <!-- content 2 끝 -->
 
+    <!-- content 3 시작 -->
+    <div class="table-wrap">
+        <div class="mini">
+            <ul>
+                <li>아르테사노 미니</li>
+                <li>30,000원</li>
+            </ul>
+        </div>
+
+        <div class="original">
+            <ul>
+                <li>아르테사노 오리지널</li>
+                <li>40,000원</li>
+            </ul>
+        </div>
+
+        <div class="plus1">+</div>
+        <div class="plus2">+</div>
+    </div>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1.2, //초기값은 모바일
-            spaceBetween: 27,
-            breakpoints: {
-
-                1024: {
-                    slidesPerView: 3, //pc 해상도
-                    spaceBetween: 20,
-                }
-
-            },
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-        });
-    </script>
 </body>
 
 </html>
