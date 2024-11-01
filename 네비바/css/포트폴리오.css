@@ -156,14 +156,14 @@ header {
     left: 20%;
 }
 
-.swiper-slide .text-3 {
+.mainSwiper .swiper-slide .text-3 {
     position: absolute;
     top: 40%;
     left: 20%;
     text-align: left;
 }
 
-.swiper-slide .text-3 p {
+.mainSwiper .swiper-slide .text-3 p {
     color: #fff;
     font-size: 20px;
     margin: 30px 0px;
@@ -196,22 +196,22 @@ header {
     /* background-color: aqua; */
 }
 
-.swiper-slide {
+.mySwiper .swiper-slide {
     text-align: center;
     font-size: 18px;
     height: 100%;
 }
 
-.slide-img {height: 577px;}
+.mySwiper .slide-img {height: 577px;}
 
-.swiper-slide img {
+.mySwiper .swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.swiper-slide ul {
+.mySwiper .swiper-slide ul {
     text-align: left;
     font-size: 16px;
     padding-left: 10px;
@@ -219,7 +219,7 @@ header {
     font-weight: 600;
 }
 
-.swiper-slide ul li:last-child {
+.mySwiper .swiper-slide ul li:last-child {
     color: #863333;
     font-weight: 700;
 }
@@ -414,7 +414,11 @@ header {
             display: block;
         }
 
-        .swiper-wrapper .text h1 {
+        .recommend_wrap {
+            width: 100%;
+        }
+
+        .mainswiper .swiper-wrapper .text h1 {
             font-size: 31px;
             text-align: left;
             line-height: 31px;
@@ -424,11 +428,11 @@ header {
             /* color: #000; */
         }
     
-        .swiper-slide .text span, .swiper-slide .text-2 span {
+        .mainswiper .swiper-slide .text span, .swiper-slide .text-2 span {
             font-size: 20px;
         }
     
-        .swiper-slide .text p { 
+        .mainswiper .swiper-slide .text p { 
             font-size: 24px;
             line-height: 30px;
             position: absolute;
@@ -437,7 +441,7 @@ header {
             text-align: right;
         }
     
-        .swiper-slide .text-2 h1,  .swiper-slide .text-3 h1 {
+        .mainswiper .swiper-slide .text-2 h1,  .swiper-slide .text-3 h1 {
             color: #fff;
             font-size: 31px;
         }
@@ -450,18 +454,18 @@ header {
             top: 60%;
         }
 
-        .swiper {
+        .recommend_wrap .swiper {
         width: 100%;
         height: 676px;
         }
 
-        .swiper-slide {position: relative;}
+        .recommend_wrap .swiper-slide {position: relative;}
 
-        .swiper-slide img {
+        .recommend_wrap .swiper-slide img {
             height: 570px;
         }
 
-        .swiper-slide ul {
+        .recommend_wrap .swiper-slide ul {
             font-size: 18px;
             position: absolute;
             top: 85%;
@@ -472,12 +476,12 @@ header {
             width: 400px;
         }
 
-        .swiper-slide .text-3 {
+        .recommend_wrap .swiper-slide .text-3 {
             top: 38%;
             left: 10%;
         }
 
-        .swiper-slide .text-3 p {
+        .recommend_wrap .swiper-slide .text-3 p {
             font-size: 20px;
             margin: 30px 0px;
         }

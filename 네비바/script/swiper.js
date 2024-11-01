@@ -15,14 +15,14 @@ var mainSwiper = new Swiper(".mainSwiper", {
     },
 });
 
-var swiper = new Swiper(".mySwiper", {
+var mySwiper = new Swiper(".mySwiper", {
     slidesPerView: 1.2, //초기값은 모바일
     spaceBetween: 27,
     breakpoints: {
 
         1024: {
             slidesPerView: 3, //pc 해상도
-            spaceBetween: 20,
+            spaceBetween: 20
         }
 
     },
