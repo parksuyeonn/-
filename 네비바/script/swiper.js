@@ -31,3 +31,20 @@ var mySwiper = new Swiper(".mySwiper", {
         clickable: true,
     },
 });
+
+var bestSwiper = new Swiper(".bestSwiper", {
+    slidesPerView: 1.3, //초기값은 모바일
+    spaceBetween: 27,
+    breakpoints: {
+
+        1024: {
+            slidesPerView: 4, //pc 해상도
+            spaceBetween: 20
+        }
+
+    },
+    pagination: {
+        el: ".bestSwiper .swiper-pagination",
+        clickable: true,
+    },
+});
